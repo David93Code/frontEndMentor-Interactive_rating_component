@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="./Resources/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="text">
+            <img class="star" src="./Resources/images/icon-star.svg" alt="star">
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve
+                our
+                offering! </p>
+        </div>
+        <form id="form" action="#">
+            <div class="numbers">
+                <input class="first" name="score" id="value1" type="button" value="1" onclick="showNum(this)">
+                <input class="second" name="score" id="value2" type="button" value="2" onclick="showNum(this)">
+                <input class="third" name="score" id="value3" type="button" value="3" onclick="showNum(this)">
+                <input class="fourth" name="score" id="value4" type="button" value="4" onclick="showNum(this)">
+                <input class="fifth" name="score" id="value5" type="button" value="5" onclick="showNum(this)">
+
+            </div>
+            <input id="submit-form" class="submit" type="submit" value="SUBMIT" onclick="showDiv()">
+        </form>
+    </section>
+    <section id="hidden" class="hidden-section">
+        <div class="hidden-content">
+            <img src="./Resources/images/illustration-thank-you.svg" alt="">
+            <div class="hidden-content-text">
+                <p id="parag-for-message" class="special-parag">
+
+                    Please select an option
+                </p>
+                <h2>Thank you!</h2>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to
+                    get in touch!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Resources/app.js"></script>
+</body>
+
+</html>
